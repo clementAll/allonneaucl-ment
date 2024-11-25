@@ -137,6 +137,10 @@
         </section><!-- /.secton-services -->
       
  
+ 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ma vidéo</title>
     <style>
         /* Centrage uniquement pour la section de la vidéo */
@@ -145,23 +149,30 @@
             margin: 20px 0; /* Espacement autour de la vidéo */
         }
 
-        .video-section video {
+        .video-section iframe {
             border: 2px solid #ccc; /* Optionnel : bordure autour de la vidéo */
             border-radius: 8px; /* Optionnel : coins arrondis */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optionnel : ombre pour un effet esthétique */
         }
     </style>
 </head>
 <body>
-    
-    
     <!-- Section centrée pour la vidéo -->
     <div class="video-section">
         <h1>Ma Vidéo de présentation</h1>
-        <video width="640" height="360" controls>
-            <source src="assets/img/vidéo.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la balise vidéo.
-        </video>
+        <!-- Remplacez "YOUR_VIDEO_ID" par l'ID de votre vidéo YouTube -->
+        <iframe 
+            width="640" 
+            height="360" 
+            src="https://www.youtube.com/embed/uATwn2_JR1A" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
     </div>
+</body>
+</html>
     
     <section id="portfolio" class="site-section section-portfolio">
             <div class="container">
